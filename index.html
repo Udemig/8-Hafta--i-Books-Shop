@@ -34,7 +34,7 @@
           <li><i class="bi bi-search"></i></li>
           <li class="basket__icon" onclick="toggleModal()">
             <i class="bi bi-bag"></i>
-            <span class="basket__count">1</span>
+            <span class="basket__count"></span>
           </li>
         </ul>
       </nav>
@@ -77,16 +77,16 @@
     <section class="store mt-5">
       <div class="filter__background"></div>
       <ul class="filter">
-        <li class="active">Tümü</li>
+        <!-- <li class="active">Tümü</li>
         <li>Tarih</li>
         <li>Roman</li>
         <li>Finans</li>
         <li>Çocuk</li>
         <li>Kişisel Gelişim</li>
-        <li>Bilim</li>
+        <li>Bilim</li> -->
       </ul>
       <div class="row book__list">
-        <div class="col-5 offset-2 my-5">
+        <!-- <div class="col-5 offset-2 my-5">
           <div class="row book__card">
             <div class="col-6">
               <img
@@ -233,7 +233,7 @@
               <button class="btn__purple">Sepete Ekle</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- basket -->
@@ -243,6 +243,11 @@
         <h2 class="basket__title">Sepetteki Ürünler</h2>
         <ul class="basket__list">
           <li class="basket__item">
+            <p class="text-center w-100">
+              Sepette herhangi bir ürün bulunmuyor.Sepete ürün ekleyiniz.
+            </p>
+          </li>
+          <!--   <li class="basket__item">
             <img
               src="./images/books/nutuk.jpg"
               alt=""
@@ -259,32 +264,15 @@
               <span class="mx-2">2</span>
               <span class="increase">+</span>
             </div>
-          </li>
-          <li class="basket__item">
-            <img
-              src="./images/books/nutuk.jpg"
-              alt=""
-              width="100"
-              height="100"
-            />
-            <div class="basket__item-info">
-              <h3 class="book__name">Nutuk</h3>
-              <span class="book__price">45tl</span> <br />
-              <span class="book__remove">Sepetten Kaldır</span>
-            </div>
-            <div class="book__count">
-              <span class="decrease">-</span>
-              <span class="mx-2">2</span>
-              <span class="increase">+</span>
-            </div>
-          </li>
+          </li> -->
         </ul>
         <div class="basket__total">
-          <span>Toplam: 100tl</span>
-          <button class="btn__purple">Onayla</button>
+          <span class="fw-bold fs-4 mb-3 total__price"></span>
+          <button class="btn__purple btnCheck">Onayla</button>
         </div>
       </div>
     </div>
+
     <!-- bs js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
